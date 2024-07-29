@@ -6,6 +6,7 @@ export type BotErrorType =
   | 'answer-engine:invalid-response'
   | 'network'
   | 'moderation'
+  | 'rotobot:network'
 
 export class BotError extends Error {
   type: BotErrorType

@@ -8,7 +8,7 @@ export const defaultMaxNumMentionsToProcessPerBatch = 10
 
 // Conntection ID for the Twitter account that is authed with Nango.
 // Auth new accounts here: https://app.nango.dev/connections
-export const nangoConnectionId = process.env.NANGO_CONNECTION_ID!
+export const nangoConnectionId = "test-connection-id"
 export const nangoCallbackUrl =
   process.env.NANGO_CALLBACK_URL ?? 'https://api.nango.dev/oauth/callback'
 
@@ -46,7 +46,7 @@ export const priorityUsersList = new Set<string>([
 
 // If Redis is disabled, all state will be stored in memory
 export const requireRedis = process.env.REQUIRE_REDIS === 'true'
-export const redisUrl = process.env.REDIS_URL
+export const redisUrl = "roto-tweet.redis.cache.windows.net"
 export const redisNamespaceTweets = process.env.REDIS_NAMESPACE_TWEETS ?? 'xt'
 export const redisNamespaceUsers = process.env.REDIS_NAMESPACE_USERS ?? 'xu'
 export const redisNamespaceMessages =
