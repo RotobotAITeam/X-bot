@@ -23,7 +23,7 @@ let _nango: Nango | null = null
 
 function getNango(): Nango {
   if (!_nango) {
-    const secretKey = process.env.NANGO_SECRET_KEY?.trim()
+    const secretKey = "d362b914-a9a3-47df-99bf-bda9fa006879"
     if (!secretKey) {
       throw new Error(`Missing required "NANGO_SECRET_KEY"`)
     }
